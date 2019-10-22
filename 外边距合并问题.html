@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>外边距合并-父子级</title>
+	<style type="text/css">
+		
+		div{
+			width: 200px;
+			height: 180px;
+			background-color: #ccc;
+
+			/* border:1px solid red; */
+		}
+		p{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			margin-top:20px;
+			
+		}
+
+		/* 
+
+		1.给父级元素添加边框属性
+		2.将自己元素的外边距改为父级元素的内边距
+		3.父子级任意一个元素浮动
+		4.父子级添加绝对定位
+		5.给父子级display: inline-block;
+		6.给腹肌元素添加overflow: hidden;
+
+
+
+		 */
+	</style>
+</head>
+<body>
+	<div>
+		<p></p>
+	</div>
+</body>
+</html>

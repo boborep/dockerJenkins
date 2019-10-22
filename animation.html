@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			animation-name: move;
+			animation-duration: 3s;
+			/* animation-delay: 3s; */
+			animation-iteration-count: 2;
+			/* animation-fill-mode: backwards; */
+			animation-direction: alternate;
+		}
+
+		p{
+			width: 50px;
+			height: 50px;
+			background-color: red;
+		}
+
+		p.one{
+			animation-name: move;
+			animation-duration: 3s;
+			animation-timing-function: ease-in;
+		}
+		p.three{
+			animation-name: move;
+			animation-duration: 3s;
+			animation-timing-function: ease-out;
+		}
+		p.two{
+			animation-name: move;
+			animation-duration: 3s;
+			animation-timing-function: ease-in-out;
+		}
+
+		p.four{
+			animation-name: move;
+			animation-duration: 3s;
+			animation-timing-function: linear;
+		}
+		p.five{
+			animation-name: move;
+			animation-duration: 3s;
+			animation-timing-function: ease;
+		}
+
+
+
+
+	/* @keyframes move{
+		form{
+			margin-left: 10px;
+			background-color: pink
+		}
+		to{
+			margin-left: 300px;
+			background-color: blue
+		}
+	} */
+
+	@keyframes move{
+		0%{
+			margin-left: 10px;
+			background-color: pink
+		}
+
+		50%{
+			margin-left: 200px;
+			background-color: green
+		}
+
+		100%{
+			margin-left: 300px;
+			background-color: blue
+		}
+	}
+
+
+	</style>
+</head>
+<body>
+	<!-- <div></div> -->
+	<p class="one"></p>
+	<p class="two"></p>
+	<p class="three"></p>
+	<p class="four"></p>
+	<p class="five"></p>
+</body>
+</html>
